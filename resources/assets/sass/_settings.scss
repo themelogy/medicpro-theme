@@ -1,0 +1,18 @@
+$default-color: #0186d5;
+$default-reverse-color: #fe824c;
+$default-font-1: 'Lato', sans-serif;
+$default-font-2: 'Open Sans', sans-serif;
+
+$page-header-bg-color: $default-color;
+$page-header-padding: 60px;
+$page-header-height: 190px;
+
+$footer-bg-color: #404d5f;
+$footer-txt-color: lighten($footer-bg-color, 25%);
+$footer-link-hover-color: #fff;
+
+$service-tabs-icon-bg: $default-color;
+$service-tabs-active-txt-color: #404d5f;
+$service-tabs-list-border-color: #e5f0fb;
+$service-tabs-list-active-border-color: $default-color;
+$service-tabs-list-txt-color: #657188;
