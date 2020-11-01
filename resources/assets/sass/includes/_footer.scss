@@ -79,9 +79,12 @@ footer {
   .footer_address .address .address_line {
     color: $footer-txt-color;
     font-family: $default-font-1;
-    line-height: 24px;
+    line-height: 20px;
     font-size: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    .phone {
+      font-size: 2rem;
+    }
   }
   p {
     font-family: $default-font-2;
