@@ -15,7 +15,7 @@
 {{--{!! Theme::script("vendors/counterup/jquery.counterup.min.js") !!}--}}
 {{--{!! Theme::script("vendors/waypoints/waypoints.min.js") !!}--}}
 {{--{!! Theme::script("vendors/flexslider/jquery.flexslider-min.js") !!}--}}
-{!! Theme::script("js/theme.js?v=1", ["defer"]) !!}
+{!! Theme::script("js/theme.js?v=2", ["defer"]) !!}
 
 @stack('js-stack')
 @stack('js-inline')
