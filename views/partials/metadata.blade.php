@@ -29,8 +29,8 @@
 {{--{!! Theme::style("vendors/owl.carousel/css/owl.theme.default.min.css") !!}--}}
 {{--{!! Theme::style("vendors/flexslider/flexslider.css") !!}--}}
 <!--Mechanic Styles-->
-{!! Theme::style("css/style.css") !!}
-{!! Theme::style("css/responsive.css") !!}
+{!! Theme::style("css/style.css?v=1") !!}
+{!! Theme::style("css/responsive.css?v=1") !!}
 
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
