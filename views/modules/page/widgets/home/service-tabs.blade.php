@@ -23,7 +23,7 @@
                     <div class="col-sm-6">
                         <div class="row m0">
                             @if($image = $page->present()->firstImage(482,363,"fit",75))
-                            <img src="{{ $image }}" alt="{{ $page->title }}" class="img-responsive">
+                            <img data-src="{{ $image }}" alt="{{ $page->title }}" class="img-responsive lazy">
                             @unset($image)
                             @endif
                             @if($page->settings->slogan->{locale()})

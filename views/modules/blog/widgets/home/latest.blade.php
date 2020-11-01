@@ -10,7 +10,7 @@
             <div class="col-sm-12 col-md-6">
                 <div class="media">
                     <div class="media-left">
-                        <a href="{{ $post->url }}"><img src="{{ $post->present()->firstImage(185,187,'fit',70) }}" alt="{{ $post->title  }}" class="img-reponsive"></a>
+                        <a href="{{ $post->url }}"><img data-src="{{ $post->present()->firstImage(185,187,'fit',70) }}" alt="{{ $post->title  }}" class="img-reponsive lazy"></a>
                     </div>
                     <div class="media-body">
                         <a href="{{ $post->url }}"><h4>{{ $post->title }}</h4></a>

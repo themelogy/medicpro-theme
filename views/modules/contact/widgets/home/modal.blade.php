@@ -50,19 +50,15 @@
 </div>
 
 @push('js-stack')
-    <script src="{{ Module::asset('contact:js/vue/vue.min.js') }}"></script>
-    <script src="{{ Module::asset('contact:js/vue/axios.min.js') }}"></script>
-    <script src="{{ Module::asset('contact:js/vue/loadingoverlay.min.js') }}"></script>
-
+    <script src="{{ Module::asset('contact:js/vue/vue.min.js', ["defer"]) }}"></script>
+    <script src="{{ Module::asset('contact:js/vue/axios.min.js', ["defer"]) }}"></script>
+    <script src="{{ Module::asset('contact:js/vue/loadingoverlay.min.js', ["defer"]) }}"></script>
 @endpush
 
 @push('js-inline')
-    <script async>
+    <script defer>
         document.addEventListener("DOMContentLoaded", function(event) {
-            @if(App::environment()=='local')
-                Vue.config.devtools = true;
-            @endif
-                window.axios.defaults.headers.common['X-CSRF-TOKEN'] = '{{ csrf_token() }}';
+            window.axios.defaults.headers.common['X-CSRF-TOKEN'] = '{{ csrf_token() }}';
             window.axios.defaults.headers.common['Cache-Control'] = 'no-cache';
             new Vue({
                 el: '#contact_form',

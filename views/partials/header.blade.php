@@ -1,14 +1,19 @@
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WDVLBX8"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <section class="row top_bar">
     <div class="container">
         <div class="row m0">
-            <div class="fleft schedule">
-                @component('contact::components.direction-us', ["class"=>""])
+            <div class="fleft schedule hidden-xs">
+
                     <i class="fa fa-map-marker"></i> @setting('theme::address')
-                @endcomponent
+
             </div>
             <div class="fright contact_info">
-                <div class="fleft email"><a href="mailto:{!! Html::email(setting('theme::email')) !!}"><i class="fa fa-envelope-o"></i> {!! Html::email(setting('theme::email')) !!}</a> </div>
-                <div class="fleft phone"><a href="tel:@setting('theme::phone')"><i class="fa fa-phone"></i> @setting('theme::phone')</a></div>
+                <div class="fleft email hidden-xs"><a href="mailto:{!! Html::email(setting('theme::email')) !!}"><i class="fa fa-envelope-o"></i> {!! Html::email(setting('theme::email')) !!}</a> </div>
+                <div class="fleft phone"><a class="phone" href="tel:@setting('theme::phone')"><i class="fa fa-phone hidden-lg hidden-md"></i> @setting('theme::phone')</a></div>
             </div>
         </div>
     </div>

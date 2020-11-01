@@ -12,7 +12,7 @@
                         {!! strip_tags($comment->message) !!}
                     </div>
                     <div class="media authorMeta">
-                        <div class="media-left"><img src="{{ Theme::url('images/user.png') }}" alt="{{ $comment->present()->fullname }}" style="height: 36px;"></div>
+                        <div class="media-left"><img class="lazy" data-src="{{ Theme::url('images/user.png') }}" alt="{{ $comment->present()->fullname }}" style="height: 36px;"></div>
                         <div class="media-body media-middle">
                             <h5>{{ $comment->present()->fullname }}</h5>
                         </div>

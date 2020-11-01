@@ -8,7 +8,7 @@
                         @foreach($slides as $slider)
                             <li data-transition="fade" data-slotamount="7" data-masterspeed="200" class="second-slide">
                                 <!--Main Image-->
-                                <img data-lazyload="{{ $slider->present()->firstImage(1970, 600, 'fit', 75) }}" alt="{{ $slider->title }}" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
+                                <img data-lazyload="{{ $slider->present()->firstImage(1600, 600, 'fit', 70) }}" alt="{{ $slider->title }}" data-bgfit="cover" data-bgposition="center top" data-bgrepeat="no-repeat">
                                 <!--Main Image-->
                                 <div class="container">
                                     @if(!empty($slider->sub_title))
@@ -47,3 +47,16 @@
         </section>
     @endif
 @endif
+
+@push('css-stack')
+    {!! Theme::style("vendors/rs-plugin/css/settings.css") !!}
+@endpush
+
+@push('js-stack')
+    {!! Theme::script("vendors/rs-plugin/js/jquery.themepunch.tools.min.js?v=1", ["defer"]) !!}
+    {!! Theme::script("vendors/rs-plugin/js/jquery.themepunch.revolution.min.js?v=1", ["defer"]) !!}
+@endpush
+
+@push('js-inline')
+    {!! Theme::script("js/revs.js?v=1", ["defer"]) !!}
+@endpush

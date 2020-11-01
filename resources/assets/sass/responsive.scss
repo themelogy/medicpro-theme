@@ -81,7 +81,18 @@
 }
 
 @media (max-width: 767px) {
+  .navbar2.affix {
+    top: 50px !important;
+  }
+  .top_bar.affix {
+    position: fixed !important;
+    height: auto;
+    width: 100%;
+    z-index: 9999 !important;
+    top: 0;
+  }
   .top_bar .container {
+    background-color: green;
     > .row i {
       float: none;
     }
@@ -100,6 +111,18 @@
       width: 100%;
       margin-top: 0;
       text-align: left;
+
+      .phone {
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #fff;
+        i {
+          font-size: 2rem;
+        }
+      }
 
       div {
         float: none;
