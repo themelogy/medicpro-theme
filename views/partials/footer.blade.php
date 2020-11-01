@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-md-6 col-lg-3 footer_logo">
-                <img class="lazy" data-src="{{ Theme::url('images/logo/logo-responsive.svg') }}" alt="@setting('theme::company-name')" style="height: 80px; margin-bottom: 20px;">
+                <img class="lazy" data-src="{{ Theme::url('images/logo/logo-responsive.svg') }}" alt="@setting('theme::company-name')" style="height: 65px; margin-bottom: 20px;">
                 <p style="font-weight: 600; text-transform: uppercase;">@setting('theme::company-name')</p>
                 <p>@lang('themes::theme.footer.intro')</p>
             </div>
